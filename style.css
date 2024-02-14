@@ -1,0 +1,301 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0A3871;
+}
+
+#frame1 {
+    position: absolute;
+    width: 2.5rem;
+    height: 3rem;
+    top: 1rem;
+    left: 1rem;
+    gap: 2.5rem;
+}
+
+#frame2 {
+
+    position: absolute;
+    width: 2.5rem;
+    height: 3rem;
+    top: 1rem;
+    left: 70rem;
+    gap: 2.5rem;
+
+}
+
+#inputTexto {
+    position: absolute;
+    width: 30rem;
+    height: 20rem;
+    top: 15rem;
+    left: 30rem;
+    font-family: 'Inter';
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #3f3f3f;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px;
+    min-width: 200px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#frame3 {
+    width: 42.5rem;
+    height: 6.7rem;
+    position: fixed;
+    bottom: 2.5rem;
+    left: 40%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+    background-color: #0A3871;
+    padding: 1.25rem;
+    border-radius: 0.8rem;
+    justify-content: flex-end;
+}
+
+#frame3 button {
+    left: 10%;
+    padding: 10px 30px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #3f3f3f;
+    border-radius: 5px;
+    min-width: 200px;
+    color: #fff;
+    z-index: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+#frame3 button::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50px;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, #ffffff75, transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px) skewX(-20deg);
+}
+
+#frame3 button:hover::before {
+    transform: translateX(300px) skew(-20deg);
+}
+
+#frame3 button:hover {
+    background: #00f7ff;
+}
+
+#rectangle1 {
+    position: absolute;
+    width: 18rem;
+    height: 18rem;
+    top: 22.5rem;
+    left: 80.5rem;
+    border-radius: 9rem;
+    background: none;
+    box-shadow: 0px 2.5rem 3.2rem -0.8rem #00000014;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#rectangle1 textarea {
+
+    font-family: 'Inter';
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 90%;
+    height: 70%;
+    margin: 5%;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    resize: none;
+    border: none;
+    border-radius: 4rem;
+    color: #fff;
+    background-color: #3f3f3f;
+}
+
+#logoCripto {
+    width: 45%; 
+    height: auto;
+    margin-top: 1rem; 
+}
+
+#alerta {
+    position: absolute;
+    top: 15.625rem;
+    left: 15rem;
+    color: red;
+    display: none;
+}
+
+#logoEmpresa {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    width: 800%;
+    height: 800%;
+}
+
+#logoEmpresa img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#mensagemNaoEncontrada {
+    position: absolute;
+    top: 18.75rem;
+    left: 75rem;
+    text-align: center;
+    color: #f00606;
+    display: none;
+}
+
+#direitos {
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    background-color: #0A3871;
+    color: #00f7ff;
+    padding: 0rem;
+    font-size: 0.8rem;
+}
+
+/* Media Query para telas móveis */
+@media (max-width: 414px) {
+    body {
+        overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+    }
+    #frame1 {
+        position: absolute;
+        width: 2.5rem;
+        height: 3rem;
+        top: 1rem;
+        left: 1rem;
+        gap: 2.5rem;
+    }
+    #logoEmpresa {
+        position: absolute;
+        top: 1.25rem;
+        left: 1.25rem;
+        width: 300%;
+        height: 300%;
+    }
+
+    #inputTexto {
+        position: absolute;
+        width: 15rem;
+        height: 10rem;
+        top: 12rem;
+        left: 6rem;
+        font-family: 'Inter';
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: 0em;
+        text-align: center;
+        background: #3f3f3f;
+        color: #fff;
+        border: none;
+        padding: 10px 30px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 2rem;
+        min-width: 200px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    #rectangle1 {
+        position: absolute;
+        width: 18rem;
+        height: 18rem;
+        top: 25rem;
+        left: 4rem;
+        border-radius: 9rem;
+        background: none;
+        box-shadow: 0px 2.5rem 3.2rem -0.8rem #00000014;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #frame3 {
+        width: 75%;
+        height: auto;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        top: 45rem;
+        transform: none;
+        padding: 1rem; /* ou ajuste conforme necessário */
+        border-radius: 0; /* Removendo a borda arredondada para economizar espaço */
+        justify-content: space-between;
+    }
+
+    #frame3 button {
+        padding: 2rem 2rem; /* Tamanhos menores para caberem na tela */
+        min-width: auto; /* Removendo a largura mínima fixa */
+        font-size: 8px; /* Ajustando o tamanho da fonte */
+        text-align: center;
+    
+    }
+
+    #frame3 button::before {
+        left: 5px; /* Ajustando o posicionamento do efeito antes do botão */
+        transform: translateX(-10px) skewX(-20deg);
+    }
+
+    #frame3 button:hover::before {
+        transform: translateX(20px) skew(-20deg);
+    }
+
+    #frame2 {
+
+        position: absolute;
+        width: 2.5rem;
+        height: 2rem;
+        top: 20rem;
+        left: 1rem;
+        gap: 2.5rem;
+    
+    }
+
+    #logoCripto {
+        width: 5rem; 
+        height: 5rem;
+        margin-top: 1rem; 
+    }
+
+    
+
+}
